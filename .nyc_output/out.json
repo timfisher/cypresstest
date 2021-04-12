@@ -1,0 +1,104 @@
+{
+  "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\_app.js": {
+    "path": "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\_app.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 2
+        },
+        "end": {
+          "line": 5,
+          "column": 38
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "MyApp",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 9
+          },
+          "end": {
+            "line": 4,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 41
+          },
+          "end": {
+            "line": 6,
+            "column": 1
+          }
+        },
+        "line": 4
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 13
+    },
+    "f": {
+      "0": 13
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "f3f8c32fc5ba5f26097ba3227b84db0ea4c909f6"
+  },
+  "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\index.js": {
+    "path": "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\index.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 65,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "Home",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 24
+          },
+          "end": {
+            "line": 5,
+            "column": 28
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 31
+          },
+          "end": {
+            "line": 66,
+            "column": 1
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 13
+    },
+    "f": {
+      "0": 13
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a3ea1ebe2fe2f71afdae839dd518617ac6dc7dc9"
+  }
+}

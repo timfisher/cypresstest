@@ -16,6 +16,9 @@
 // Import commands.js using ES2015 syntax:
 import "./commands";
 require("cypress-watch-and-reload/support");
+import "@testing-library/cypress/add-commands";
+import "@cypress/code-coverage/support";
+import "@percy/cypress";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

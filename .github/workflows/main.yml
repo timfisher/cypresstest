@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install dependencies, lint, test
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+      - run: yarn
+      - name: Run e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          # we have already installed all dependencies above
+          install: false
+          start: yarn start
+          # wait for all services to respond
+          wait-on: "http://0.0.0.0:3000"
+          # wait for 5 minutes for the server to respond
+          wait-on-timeout: 300
+          command: yarn test:e2e && yarn test:ct
+          config: baseUrl=http://0.0.0.0:3000
+      - name: Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          urls: |
+            http://0.0.0.0:3000
+          uploadArtifacts: true
+      - name: Semantic Release Action
+        uses: codfish/semantic-release-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        with:
+          # The branch on which releases should happen. https://github.com/semantic-release/semantic-release/blob/master/docs/usage/configuration.md#branch
+          branch: main
+
+  deploy:
+    if: github.event_name == 'push' || github.event.label.name == 'pullpreview' || contains(github.event.pull_request.labels.*.name, 'pullpreview')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pullpreview/action@v4
+        with:
+          # Those GitHub users will have SSH access to the servers
+          admins: timfisher
+          # A staging environment will always exist for the master branch
+          always_on: main
+          # Use the cidrs option to restrict access to the live environments to specific IP ranges
+          cidrs: "0.0.0.0/0"
+          # PullPreview will use those 2 files when running docker-compose up
+          compose_files: docker-compose.yml
+          # The preview URL will target this port
+          default_port: 80
+          # Ports to open on the server
+          ports: 80,8080,3000,5432,4567
+        env:
+          AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+          AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          AWS_REGION: "eu-west-2"

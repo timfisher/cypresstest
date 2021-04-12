@@ -1,0 +1,4 @@
+{
+  "plugins": ["istanbul"],
+  "presets": ["@babel/preset-react"]
+}

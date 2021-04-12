@@ -2,11 +2,11 @@
   "cypress-watch-and-reload": {
     "watch": "./pages/*"
   },
-  "testFiles": "cypress/integration/*.spec.js",
   "component": {
-    "componentFolder": "components",
+    "componentFolder": "./components",
     "testFiles": "*test.*",
     "viewportHeight": 500,
     "viewportWidth": 700
-  }
+  },
+  "projectId": "test"
 }

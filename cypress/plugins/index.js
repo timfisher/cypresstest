@@ -20,9 +20,11 @@
 require("cypress-watch-and-reload/plugins");
 
 module.exports = (on, config) => {
-  if (config.testingType === 'component') {
-    require('@cypress/react/plugins/next')(on, config)
+  require("@cypress/code-coverage/task")(on, config);
+
+  if (config.testingType === "component") {
+    require("@cypress/react/plugins/next")(on, config);
   }
 
-  return config
-}
+  return config;
+};
