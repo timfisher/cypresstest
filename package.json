@@ -10,7 +10,7 @@
     "ct": "nodemon -e js,jsx,ts,tsx,css,scss --exec cypress run-ct",
     "ct:open": "cypress open-ct",
     "test:local": "cypress run",
-    "test:e2e": "cypress run --parallel --record --key somekey --ci-build-id test",
+    "test:e2e": "cypress run",
     "test:ct": "cypress open-ct"
   },
   "dependencies": {
