@@ -31,7 +31,7 @@ jobs:
         with:
           # we have already installed all dependencies above
           install: false
-          start: yarn start
+          start: yarn dev
           # wait for all services to respond
           wait-on: "http://0.0.0.0:3000"
           # wait for 5 minutes for the server to respond
