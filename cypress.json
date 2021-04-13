@@ -3,7 +3,7 @@
     "watch": "./pages/*"
   },
   "component": {
-    "componentFolder": "./components",
+    "componentFolder": "components",
     "testFiles": "*test.*",
     "viewportHeight": 500,
     "viewportWidth": 700

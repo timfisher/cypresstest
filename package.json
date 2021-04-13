@@ -11,7 +11,7 @@
     "ct:open": "cypress open-ct",
     "test:local": "cypress run",
     "test:e2e": "cypress run --parallel --record --key somekey --ci-build-id test",
-    "test:ct": "percy exec -- cypress run-ct"
+    "test:ct": "cypress open-ct"
   },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
@@ -24,7 +24,7 @@
     "babel-plugin-istanbul": "^6.0.0",
     "cross-env": "^7.0.3",
     "cy2": "^1.0.4",
-    "cypress": "^7.0.1",
+    "cypress": "^7.1.0",
     "cypress-watch-and-reload": "^1.3.6",
     "html-webpack-plugin": "4.0.0",
     "istanbul": "^0.4.5",
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.3",
+    "lazy-compile-webpack-plugin": "^0.1.11",
     "typescript": "^4.2.4"
   }
 }
