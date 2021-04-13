@@ -36,7 +36,7 @@ jobs:
           wait-on: "http://0.0.0.0:3000"
           # wait for 5 minutes for the server to respond
           wait-on-timeout: 300
-          command: yarn test:e2e && yarn test:ct
+          command: yarn test:ct
           config: baseUrl=http://0.0.0.0:3000
       - name: Lighthouse CI
         uses: treosh/lighthouse-ci-action@v3
