@@ -11,7 +11,7 @@
     "ct:open": "cypress open-ct",
     "test:local": "cypress run",
     "test:e2e": "cypress run",
-    "test:ct": "cypress run-ct",
+    "test:ct": "cypress run-ct"
   },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
