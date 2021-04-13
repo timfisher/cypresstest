@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import React from "React";
+import * as React from "react";
 
 export default function Home() {
   return (
