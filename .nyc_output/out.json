@@ -1,104 +1,126 @@
 {
-  "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\_app.js": {
-    "path": "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\_app.js",
+  "/Users/tim.fisher/Documents/Code/cypresstest/components/Dialog.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/cypresstest/components/Dialog.tsx",
     "statementMap": {
       "0": {
         "start": {
-          "line": 5,
-          "column": 2
+          "line": 3,
+          "column": 15
         },
         "end": {
           "line": 5,
-          "column": 38
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
+          "column": 2
+        },
+        "end": {
+          "line": 4,
+          "column": 67
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "MyApp",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 4,
-            "column": 9
+            "line": 3,
+            "column": 15
           },
           "end": {
-            "line": 4,
-            "column": 14
+            "line": 3,
+            "column": 16
           }
         },
         "loc": {
           "start": {
-            "line": 4,
-            "column": 41
+            "line": 3,
+            "column": 33
           },
           "end": {
-            "line": 6,
+            "line": 5,
             "column": 1
           }
         },
-        "line": 4
+        "line": 3
       }
     },
     "branchMap": {},
     "s": {
-      "0": 13
+      "0": 60,
+      "1": 60
     },
     "f": {
-      "0": 13
+      "0": 60
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "f3f8c32fc5ba5f26097ba3227b84db0ea4c909f6"
+    "hash": "696bd4362e33685541552fa83322eddbf98dbd02"
   },
-  "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\index.js": {
-    "path": "C:\\Users\\Tim\\Documents\\Code\\test\\pages\\index.js",
+  "/Users/tim.fisher/Documents/Code/cypresstest/components/Button.tsx": {
+    "path": "/Users/tim.fisher/Documents/Code/cypresstest/components/Button.tsx",
     "statementMap": {
       "0": {
         "start": {
-          "line": 6,
+          "line": 3,
+          "column": 15
+        },
+        "end": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 4,
           "column": 2
         },
         "end": {
-          "line": 65,
-          "column": 4
+          "line": 4,
+          "column": 67
         }
       }
     },
     "fnMap": {
       "0": {
-        "name": "Home",
+        "name": "(anonymous_0)",
         "decl": {
           "start": {
-            "line": 5,
-            "column": 24
+            "line": 3,
+            "column": 15
           },
           "end": {
-            "line": 5,
-            "column": 28
+            "line": 3,
+            "column": 16
           }
         },
         "loc": {
           "start": {
-            "line": 5,
-            "column": 31
+            "line": 3,
+            "column": 33
           },
           "end": {
-            "line": 66,
+            "line": 5,
             "column": 1
           }
         },
-        "line": 5
+        "line": 3
       }
     },
     "branchMap": {},
     "s": {
-      "0": 13
+      "0": 58,
+      "1": 58
     },
     "f": {
-      "0": 13
+      "0": 58
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a3ea1ebe2fe2f71afdae839dd518617ac6dc7dc9"
+    "hash": "7e542f0a8e58d3bf4f64f38c6388a94b935367e2"
   }
 }

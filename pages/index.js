@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import * as React from "react";
+import Dialog from '../components/Dialog';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Change <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
+        <Dialog>Test</Dialog>
         <p className={styles.description}>
           Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>

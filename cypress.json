@@ -1,12 +1,10 @@
 {
-  "cypress-watch-and-reload": {
-    "watch": "./pages/*"
-  },
   "component": {
     "componentFolder": "components",
-    "testFiles": "*test.*",
+    "testFiles": "*spec.*",
     "viewportHeight": 500,
     "viewportWidth": 700
   },
-  "projectId": "test"
+  "projectId": "test",
+  "video": false
 }
